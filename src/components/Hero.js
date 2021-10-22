@@ -18,16 +18,9 @@ function Hero() {
         <h5>I am Mern Stack Developer. Passionate about <br /> implementing and launching new projects. Ability <br />  to translate business requirements into technical <br />  solutions.</h5>
         <Link to="/about">
           <button className="about-btn" href="">
-            <span>
-              More about me{' '}
+            <span>More about me
               <small>
-                <svg
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 476.213 476.213"
-                >
-                  <path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"></path>
-                </svg>
+              <i class="fas fa-angle-double-right"></i>
               </small>
             </span>
           </button>
