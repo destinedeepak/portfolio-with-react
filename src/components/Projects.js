@@ -18,9 +18,11 @@ function Projects(props) {
             <h1>{index + 1}</h1>
             <h2>{ele.title}</h2>
             <p>{ele.desc}</p>
-            <ul className="tag">
+            <ul>
               {ele.techStacks.map((techStack) => (
-                <span resize>{techStack}</span>
+                <li className="tag" resize>
+                  {techStack}
+                </li>
               ))}
             </ul>
             <a href={ele.projectLink} target="_blank">
@@ -29,7 +31,7 @@ function Projects(props) {
                   {/* <i className="fas fa-link"></i> */}
                   Go to Project
                   <small>
-                    <i className="fas fa-long-arrow-alt-right"></i>
+                    <i class="fas fa-angle-double-right"></i>
                   </small>
                 </span>
               </button>
@@ -40,7 +42,7 @@ function Projects(props) {
                   {/* <i className="fab fa-github"></i> */}
                   Go to Git repo
                   <small className="git">
-                    <i className="fas fa-long-arrow-alt-right"></i>
+                    <i class="fas fa-angle-double-right"></i>
                   </small>
                 </span>
               </button>
