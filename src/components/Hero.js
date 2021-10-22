@@ -15,15 +15,21 @@ function Hero() {
         <h1>
           Hello, my name is <span>Deepak Kumar Singh</span>{' '}
         </h1>
-        <h5>I am Mern Stack Developer. Passionate about <br /> implementing and launching new projects. Ability <br />  to translate business requirements into technical <br />  solutions.</h5>
+        <h5>
+          I am Mern Stack Developer. Passionate about <br /> implementing and
+          launching new projects. Ability <br /> to translate business
+          requirements into technical <br /> solutions.
+        </h5>
         <Link to="/about">
-          <button className="about-btn" href="">
-            <span>More about me
-              <small>
-              <i class="fas fa-angle-double-right"></i>
-              </small>
-            </span>
-          </button>
+        <button className="about-btn">
+                <span>
+                  {/* <i className="fas fa-link"></i> */}
+                  Go to Project
+                  <small>
+                    <i class="fas fa-angle-double-right"></i>
+                  </small>
+                </span>
+              </button>
         </Link>
       </article>
       <SocialNav />

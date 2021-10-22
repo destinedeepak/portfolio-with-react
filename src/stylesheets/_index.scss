@@ -57,53 +57,58 @@ header {
       }
     }
     button {
-      @extend .btn;
-      background: linear-gradient(
-        to right,
-        rgb(230, 100, 74),
-        rgb(230, 52, 17)
-      );
-      color: white;
-      font-weight: 700;
-      letter-spacing: 2px;
-      position: relative;
-      transition: all 0.4s;
-      border: 0;
-
-      span {
+        @extend .btn;
+        background: linear-gradient(to right, $secondary-color, $secondary-color);
+        color: white;
+        font-weight: 700;
+        letter-spacing: 2px;
+        transition: all 0.4s;
+        border: 0;
+        width: 200px;
         position: relative;
         z-index: 2;
+        margin-top: 0.8rem;
+        display: block;
+        span {
+          position: relative;
+          z-index: 2;
+        }
+        small {
+          position: absolute;
+          right: -40px;
+          font-size: 1.5rem;
+        }
+        .git {
+          right: -38px;
+        }
+        &:after {
+          position: absolute;
+          content: '';
+          left: 0;
+          width: 0;
+          height: 100%;
+          transition: all 0.4s;
+          background: linear-gradient(rgb(230, 100, 74), rgb(230, 52, 17));
+          border-radius: 8px;
+        }
+  
+        &:hover {
+          color: #fff;
+        }
+  
+        &:hover:after {
+          width: 100%;
+          transform: rotateX(180deg);
+        }
+  
+        &:hover small {
+          transform: rotateX(180deg);
+          right: -45px;
+        }
+        &:hover .git {
+          right: -43px;
+        }
       }
-
-      small {
-        position: absolute;
-        z-index: 2;
-        top: -12px;
-        right: -30px;
-        color: white;
-        font-size: 2rem;
-      }
-      &:after {
-        position: absolute;
-        content: '';
-        left: 0;
-        height: 100%;
-        width: 0;
-        transition: all 0.4s;
-        background: $primary-color;
-      }
-
-      &:hover {
-        color: #fff;
-      }
-
-      &:hover:after {
-        width: 100%;
-      }
-      &:hover small {
-        right: -40px;
-      }
-    }
   }
 }
 
