@@ -24,7 +24,7 @@ function Hero() {
         <button className="about-btn">
                 <span>
                   {/* <i className="fas fa-link"></i> */}
-                  Go to Project
+                  More about me
                   <small>
                     <i class="fas fa-angle-double-right"></i>
                   </small>

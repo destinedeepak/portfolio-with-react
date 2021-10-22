@@ -64,7 +64,7 @@ header {
         letter-spacing: 2px;
         transition: all 0.4s;
         border: 0;
-        width: 200px;
+        width: 220px;
         position: relative;
         z-index: 2;
         margin-top: 0.8rem;
@@ -89,7 +89,6 @@ header {
           height: 100%;
           transition: all 0.4s;
           background: linear-gradient(rgb(230, 100, 74), rgb(230, 52, 17));
-          border-radius: 8px;
         }
   
         &:hover {
