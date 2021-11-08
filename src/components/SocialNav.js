@@ -5,7 +5,7 @@ function SocialNav() {
     <nav>
       <ul className="flex social-nav column">
         <li>
-          <a target="blank" href="linkedin.com/in/destinedeepak">
+          <a target="blank" href="https://linkedin.com/in/destinedeepak">
             <i className="fab fa-linkedin-in"></i>
           </a>
         </li>
